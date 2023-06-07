@@ -14,12 +14,12 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "static_webapp_rg" {
-  name     = "assignment"
+  name     = "assignment1"
   location = "centralus"
 }
 
 resource "azurerm_static_site" "static_webapp" {
-  name                = "blog-starter"
+  name                = "blog-starter1"
   location            = azurerm_resource_group.static_webapp_rg.location
   resource_group_name = azurerm_resource_group.static_webapp_rg.name
 }
